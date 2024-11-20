@@ -1,0 +1,267 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Collins Rev Inc.</title>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap" rel="stylesheet">
+    <style>
+        /* Reset CSS */
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: 'Poppins', sans-serif;
+            color: #333;
+            background-color: #f4f4f4;
+            line-height: 1.6;
+        }
+
+        header {
+            background: linear-gradient(135deg, #0c3c9e, #13529b);
+            color: white;
+            padding: 30px 0;
+            text-align: center;
+        }
+
+        header h1 {
+            font-size: 3em;
+            text-transform: uppercase;
+            letter-spacing: 2px;
+        }
+
+        header p {
+            font-size: 1.2em;
+        }
+
+        nav {
+            display: flex;
+            justify-content: center;
+            background-color: #1d69e7;
+            padding: 15px 0;
+        }
+
+        nav a {
+            color: white;
+            text-decoration: none;
+            margin: 0 15px;
+            font-weight: 600;
+            text-transform: uppercase;
+            transition: color 0.3s;
+        }
+
+        nav a:hover {
+            color: #ffcc00;
+        }
+
+        .container {
+            max-width: 1200px;
+            margin: 50px auto;
+            padding: 0 20px;
+        }
+
+        .about,
+        .services,
+        .contact {
+            margin-bottom: 60px;
+        }
+
+        .about h2,
+        .services h2,
+        .contact h2 {
+            text-align: center;
+            margin-bottom: 30px;
+            font-size: 2.5em;
+            color: #0c3c9e;
+        }
+
+        .about p {
+            font-size: 1.2em;
+            text-align: center;
+            max-width: 800px;
+            margin: 0 auto;
+        }
+
+        .services {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 20px;
+        }
+
+        .service {
+            background-color: white;
+            border-radius: 10px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+            padding: 20px;
+            text-align: center;
+            transition: transform 0.3s;
+        }
+
+        .service:hover {
+            transform: translateY(-10px);
+        }
+
+        .service img {
+            max-width: 100%;
+            border-radius: 10px;
+        }
+
+        .service h3 {
+            margin: 20px 0 10px;
+            font-size: 1.5em;
+        }
+
+        .service p {
+            font-size: 1em;
+        }
+
+        .cta {
+            background: linear-gradient(135deg, #13529b, #0c3c9e);
+            color: white;
+            padding: 40px 0;
+            text-align: center;
+            margin-top: 50px;
+        }
+
+        .cta h2 {
+            font-size: 2.5em;
+            margin-bottom: 20px;
+        }
+
+        .cta button {
+            background-color: #ffcc00;
+            color: #0c3c9e;
+            border: none;
+            padding: 15px 30px;
+            border-radius: 5px;
+            cursor: pointer;
+            font-size: 1.2em;
+            transition: background-color 0.3s;
+        }
+
+        .cta button:hover {
+            background-color: #ffd633;
+        }
+
+        .contact-form {
+            background-color: white;
+            border-radius: 10px;
+            padding: 20px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+            max-width: 600px;
+            margin: 0 auto;
+        }
+
+        .contact-form input,
+        .contact-form textarea {
+            width: 100%;
+            padding: 10px;
+            margin-bottom: 20px;
+            border: 1px solid #ddd;
+            border-radius: 5px;
+            font-size: 1em;
+        }
+
+        .contact-form button {
+            background-color: #0c3c9e;
+            color: white;
+            border: none;
+            padding: 10px 20px;
+            border-radius: 5px;
+            cursor: pointer;
+            font-size: 1.2em;
+            transition: background-color 0.3s;
+        }
+
+        .contact-form button:hover {
+            background-color: #13529b;
+        }
+
+        footer {
+            background-color: #0c3c9e;
+            color: white;
+            text-align: center;
+            padding: 20px 0;
+        }
+
+        footer p {
+            margin-bottom: 5px;
+        }
+
+        footer a {
+            color: #ffcc00;
+            text-decoration: none;
+        }
+
+        footer a:hover {
+            text-decoration: underline;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Collins Rev Inc.</h1>
+        <p>Your Trusted Partner for High-Quality Car Services</p>
+    </header>
+
+    <nav>
+        <a href="#about">About Us</a>
+        <a href="#services">Services</a>
+        <a href="#contact">Contact</a>
+    </nav>
+
+    <div class="container">
+        <section id="about" class="about">
+            <h2>About Collins Rev Inc.</h2>
+            <p>Welcome to Collins Rev Inc., where we revitalize your ride with top-notch services. From professional car detailing to engine overhauls, our team of experts is dedicated to keeping your vehicle in pristine condition.</p>
+        </section>
+
+        <section id="services" class="services">
+            <h2>Our Services</h2>
+            <div class="service">
+                <img src="https://example.com/car-service.jpg" alt="Car Service">
+                <h3>Full Car Detailing</h3>
+                <p>Get your car looking brand new with our comprehensive detailing service.</p>
+            </div>
+            <div class="service">
+                <img src="https://example.com/engine-overhaul.jpg" alt="Engine Overhaul">
+                <h3>Engine Overhaul</h3>
+                <p>Our skilled technicians provide thorough engine overhauls to ensure your car runs smoothly.</p>
+            </div>
+            <div class="service">
+                <img src="https://example.com/wheel-alignment.jpg" alt="Wheel Alignment">
+                <h3>Wheel Alignment</h3>
+                <p>Ensure your car drives straight and true with our precise wheel alignment services.</p>
+            </div>
+            <div class="service">
+                <img src="https://example.com/paint-protection.jpg" alt="Paint Protection">
+                <h3>Paint Protection</h3>
+                <p>Protect your car's finish with our high-quality paint protection services.</p>
+            </div>
+        </section>
+
+        <section id="contact" class="contact">
+            <h2>Contact Us</h2>
+            <form class="contact-form">
+                <input type="text" placeholder="Your Name" required>
+                <input type="email" placeholder="Your Email" required>
+                <textarea placeholder="Your Message" rows="5" required></textarea>
+                <button type="submit">Send Message</button>
+            </form>
+        </section>
+    </div>
+
+    <section class="cta">
+        <h2>Ready to Rev Your Ride?</h2>
+        <button onclick="window.location.href='#contact'">Contact Us Today</button>
+    </section>
+
+    <footer>
+        <p>&copy; 2024 Collins Rev Inc. All Rights Reserved.</p>
+        <p>Follow us on <a href="#">Facebook</a>, <a href="#">Instagram</a>, and <a href="#">Twitter</a>.</p>
+    </footer>
+</body>
+</html>
